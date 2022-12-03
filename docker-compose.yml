@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  mysafeip:
+    image: yvguim/mysafeip:latest
+    restart: unless-stopped
+    container_name: mysafeip
+    ports:
+      - "8080:80"
+    volumes:
+      - ./sql_app.db:/app/sql_app.db
+      - ./env:/app/.env
+networks:
+  default:
+    name: exponet
