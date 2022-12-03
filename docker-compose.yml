@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     container_name: mysafeip
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - ./sql_app.db:/app/sql_app.db
       - ./env:/app/.env

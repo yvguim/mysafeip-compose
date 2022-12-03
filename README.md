@@ -12,7 +12,9 @@ Go to mysafeip-compose directory and create an empty sql_app.db file.
 cd mysafeip-compose && touch sql_app.db
 </code>
   
-Edit env file to suit your needs.
+Edit env file to suit your needs and in priority:
+JWT_SECRET
+URL_WEBSITE
 
 Pull and launch mysafeip docker container:
 <code>
@@ -29,7 +31,9 @@ Init admin account and password:
 docker exec -it mysafeip python3 /app/init_admin.py yves.guimard@gmail.com Your_super_secret_password!
 </code>
 
-Now your mysafeip server is available. Try it your web browser.
+Now your mysafeip server is available. Try it your web browser: http://your_url
+
+To use it with https, consider caddy container for example ;)
 
 Tips to update to latest mysafeip version:
 <code>
