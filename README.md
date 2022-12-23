@@ -1,41 +1,41 @@
 # mysafeip-compose
 
-This is a simple repository to deploy mysafeip server with docker-compose
+This is a simple repository to deploy mysafeip server with docker-compose.
+Installation is straight forward and take 5 minutes.
 
 Clone repository:
-<code>
+```
 git clone https://github.com/yvguim/mysafeip-compose.git
-</code>
+```
 
 Go to mysafeip-compose directory and create an empty sql_app.db file.
-<code>
+```
 cd mysafeip-compose && touch sql_app.db
-</code>
-  
+```
+
 Edit env file to suit your needs and in priority:
+```
 JWT_SECRET
 URL_WEBSITE
+```
 
 Pull and launch mysafeip docker container:
-<code>
+```
 docker compose pull ; docker compose up -d
-</code>
+```
 
-You can check all is ok with the log command:
-<code>
+You can check that all is ok with the log command:
+```
 docker logs mysafeip 
-</code>
+```
 
-Init admin account and password:
-<code>
+Initialize admin account and password:
+```
 docker exec -it mysafeip python3 /app/init_admin.py yves.guimard@gmail.com Your_super_secret_password!
-</code>
+```
 
-Now your mysafeip server is available. Try it your web browser: http://your_url
+Now your mysafeip server is available. Try it in your web browser: http://your_url and login with the account created previously.
 
-To use it with https, consider caddy container for example ;)
+You can now secure your authentication by enabling TOTP and create a token for your client:
 
-Tips to update to latest mysafeip version:
-<code>
-docker compose down ; docker compose pull ; docker compose up -d
-</code>
+Now, you can configure your mysafeip-client: [https://github.com/yvguim/mysafeip-client]
