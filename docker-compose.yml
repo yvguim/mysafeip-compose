@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   mysafeip:
-    image: yvguim/mysafeip:latest
+    image: yvguim/mysafeip:0.9
     restart: unless-stopped
     container_name: mysafeip
     ports:
