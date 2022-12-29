@@ -5,6 +5,8 @@ Installation is straight forward and take 5 minutes.
 
 [Want to know what is MySafeIp?](https://github.com/yvguim/mysafeip)
 
+## Installation
+
 Clone repository:
 ```
 git clone https://github.com/yvguim/mysafeip-compose.git
@@ -30,6 +32,8 @@ You can check that all is ok with the log command:
 ```
 docker logs mysafeip 
 ```
+
+## Configuration
 
 Initialize admin account and password:
 ```
