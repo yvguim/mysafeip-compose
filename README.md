@@ -3,6 +3,8 @@
 This is a simple repository to deploy mysafeip server with docker-compose.
 Installation is straight forward and take 5 minutes.
 
+[Want to know what is MySafeIp?](https://github.com/yvguim/mysafeip)
+
 Clone repository:
 ```
 git clone https://github.com/yvguim/mysafeip-compose.git
