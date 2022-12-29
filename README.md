@@ -44,4 +44,4 @@ Now your mysafeip server is available. Try it in your web browser: http://your_u
 
 You can now secure your authentication by enabling TOTP and create a token for your client:
 
-Now, you can configure your mysafeip-client: [https://github.com/yvguim/mysafeip-client]
+Now, you can configure [mysafeip-client](https://github.com/yvguim/mysafeip-client)
