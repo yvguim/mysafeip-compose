@@ -45,3 +45,17 @@ Now your mysafeip server is available. Try it in your web browser: http://your_u
 You can now secure your authentication by enabling TOTP and create a token for your client:
 
 Now, you can configure [mysafeip-client](https://github.com/yvguim/mysafeip-client)
+
+
+## How to use latest mysafeip version
+
+I fix mysafeip releases with tags. For the moment, 0.9 version tag is used in docker-compose.yml file.
+
+If you want to use latest version (not as fully reviewed than tagged versions), modify docker-compose.yml and change:
+ ```
+ image: yvguim/mysafeip:0.9
+ ```
+ by 
+ ```
+ image: yvguim/mysafeip:latest
+```
