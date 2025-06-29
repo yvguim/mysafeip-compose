@@ -49,11 +49,11 @@ Now, you can configure [mysafeip-client](https://github.com/yvguim/mysafeip-clie
 
 ## How to use latest mysafeip version
 
-I fix mysafeip releases with tags. For the moment, 0.9 version tag is used in docker-compose.yml file.
+I fix mysafeip releases with tags. For the moment, 0.11 version tag is used in docker-compose.yml file.
 
 If you want to use latest version (not as fully reviewed than tagged versions), modify docker-compose.yml and change:
  ```
- image: yvguim/mysafeip:0.9
+ image: yvguim/mysafeip:0.11
  ```
  by 
  ```
